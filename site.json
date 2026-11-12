@@ -1,0 +1,8 @@
+{
+  "title": "세상을 읽는 시간",
+  "subtitle": "배경과 맥락으로 배우는 한국어 뉴스 브리핑",
+  "url": "https://kohyuji.github.io",
+  "baseurl": "/daily-news-briefing",
+  "timezone": "Asia/Seoul",
+  "repository": "https://github.com/kohyuji/daily-news-briefing"
+}

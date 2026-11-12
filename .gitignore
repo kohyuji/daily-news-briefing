@@ -1,0 +1,7 @@
+_site/
+.vendor/
+__pycache__/
+.venv/
+.env
+.ops/run.lock
+*.tmp
