@@ -5,3 +5,5 @@ __pycache__/
 .env
 .ops/run.lock
 *.tmp
+.ops/research/raw/
+.qa/

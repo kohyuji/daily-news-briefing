@@ -39,6 +39,7 @@ def read_post(path):
     return meta
 
 def validate(p):
+    assert 'TODO' not in p['_body'] and 'TODO' not in p['title'], '미완성 템플릿 발행 금지'
     date = p['publication_date']
     datetime.strptime(date, '%Y-%m-%d')
     assert p['_path'].name == f'{date}-briefing.md', '날짜별 문서 이름 불일치'
@@ -62,7 +63,7 @@ def validate(p):
         marker = '{#' + a['id'] + '}'
         assert p['_body'].count(marker) == 1, f"본문 ID 누락: {a['id']}"
         after = p['_body'].split(marker, 1)[1]
-        segment = re.split(r'^##?\s|^###\s', after, 1, flags=re.M)[0]
+        segment = re.split(r'^##?\s|^###\s', after, maxsplit=1, flags=re.M)[0]
         assert len(segment) >= 800, f"설명 깊이 확인 필요: {a['id']}"
         assert a['status'] in ['새 이슈', '계속되는 이슈', '상황 변화']
         assert len(a['sources']) >= 2, f"출처 2개 필요: {a['id']}"
