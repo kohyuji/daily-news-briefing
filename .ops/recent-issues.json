@@ -1,1 +1,95 @@
-{"last_success_cutoff": null, "issues": []}
+{
+  "last_success_cutoff": "2026-11-12T14:40:00+09:00",
+  "issues": [
+    {
+      "id": "g7-taiwan-sea",
+      "title": "G7이 대만 동쪽 바다를 지목한 이유",
+      "change": "G7 파리 공동선언이 대만 동쪽 해역 활동과 항행 안전을 구체적으로 지목.",
+      "link": "https://kohyuji.github.io/daily-news-briefing/briefings/2026/11/2026-11-12/#g7-taiwan-sea"
+    },
+    {
+      "id": "ukraine-abu-dhabi-talks",
+      "title": "우크라이나 협상, 포로 교환 합의와 종전 합의의 거리",
+      "change": "아부다비 회담에서 포로 교환 합의; 휴전·영토 문제의 돌파구 미확인.",
+      "link": "https://kohyuji.github.io/daily-news-briefing/briefings/2026/11/2026-11-12/#ukraine-abu-dhabi-talks"
+    },
+    {
+      "id": "cop31-climate-finance",
+      "title": "COP31의 기후재원 논쟁, 돈의 액수만으로 끝나지 않습니다",
+      "change": "COP31 정상 발언에서 기후재원의 집행·접근성·부채 부담이 주요 쟁점.",
+      "link": "https://kohyuji.github.io/daily-news-briefing/briefings/2026/11/2026-11-12/#cop31-climate-finance"
+    },
+    {
+      "id": "korea-october-employment",
+      "title": "취업자는 늘었는데 청년 고용은 왜 다르게 보일까요",
+      "change": "10월 취업자 13.9만 명 증가; 청년 고용률과 업종별 흐름은 다름.",
+      "link": "https://kohyuji.github.io/daily-news-briefing/briefings/2026/11/2026-11-12/#korea-october-employment"
+    },
+    {
+      "id": "korea-fiscal-september",
+      "title": "나라살림 적자가 줄어도 채무는 늘 수 있습니다",
+      "change": "11월 재정동향 공개: 9월 누계 관리재정수지 32조 원 적자, 중앙정부 채무 1369.4조 원.",
+      "link": "https://kohyuji.github.io/daily-news-briefing/briefings/2026/11/2026-11-12/#korea-fiscal-september"
+    },
+    {
+      "id": "korea-edutech-privacy",
+      "title": "교육용 서비스의 개인정보, ‘편리한 수업’ 뒤의 관리 책임",
+      "change": "개인정보위 에듀테크 5개 사업자 사전 점검; 파기·권한·보안의 일부 미흡 개선·권고.",
+      "link": "https://kohyuji.github.io/daily-news-briefing/briefings/2026/11/2026-11-12/#korea-edutech-privacy"
+    },
+    {
+      "id": "culture-ai-copyright",
+      "title": "AI와 저작권, 창작 생태계에서 무엇을 협상하나요",
+      "change": "서울 저작권 포럼의 AI 학습·산출·이용허락 논의 일정 공개; 합의 결과는 미확인.",
+      "link": "https://kohyuji.github.io/daily-news-briefing/briefings/2026/11/2026-11-12/#culture-ai-copyright"
+    },
+    {
+      "id": "culture-production-staff",
+      "title": "영화와 무대를 만드는 사람들, 제작스태프 포상이 던지는 질문",
+      "change": "제작스태프 포상 10명·팀 선정; 시상 예정이며 노동환경 개선 실적으로 해석하지 않음.",
+      "link": "https://kohyuji.github.io/daily-news-briefing/briefings/2026/11/2026-11-12/#culture-production-staff"
+    },
+    {
+      "id": "culture-agency-integration",
+      "title": "문화진흥 기관 통합, 조직을 합치는 일과 서비스를 잇는 일",
+      "change": "문화진흥 기관 통합 TF 첫 회의 추진; 한국문화진흥원은 가칭, 통합 완료 아님.",
+      "link": "https://kohyuji.github.io/daily-news-briefing/briefings/2026/11/2026-11-12/#culture-agency-integration"
+    },
+    {
+      "id": "tech-ar-waveguide",
+      "title": "얇은 AR 안경, 빛이 눈에 도착하는 길을 바꾸다",
+      "change": "메타표면 이중 도파관 AR 시제품 논문; 1.5mm 구조·30도 시야·8x8mm 아이박스.",
+      "link": "https://kohyuji.github.io/daily-news-briefing/briefings/2026/11/2026-11-12/#tech-ar-waveguide"
+    },
+    {
+      "id": "tech-network-metamaterials",
+      "title": "똑같은 격자를 벗어난 메타물질, 연결 방식도 성능입니다",
+      "change": "연결의 길이·두께·다양성을 조절한 메타물질 계산·제작·실험 공개.",
+      "link": "https://kohyuji.github.io/daily-news-briefing/briefings/2026/11/2026-11-12/#tech-network-metamaterials"
+    },
+    {
+      "id": "tech-chapea-human-factors",
+      "title": "모의 화성에서 돌아온 네 사람, 우주개발의 ‘사람’ 문제",
+      "change": "NASA 11월9일 승무원 경험·평가계획 공개; 10월31일 종료와 구분, 최종 연구결과 아님.",
+      "link": "https://kohyuji.github.io/daily-news-briefing/briefings/2026/11/2026-11-12/#tech-chapea-human-factors"
+    },
+    {
+      "id": "science-nuclear-pore",
+      "title": "세포핵의 문은 굳은 벽이 아니라 움직이는 장벽이었습니다",
+      "change": "살아 있는 핵공 NUP98의 국소 유동성 측정; 당 수식과 임포틴-베타 역할.",
+      "link": "https://kohyuji.github.io/daily-news-briefing/briefings/2026/11/2026-11-12/#science-nuclear-pore"
+    },
+    {
+      "id": "science-m87-independent",
+      "title": "M87 블랙홀 고리, 다른 분석법으로 다시 확인하다",
+      "change": "기존 2017·2018·2021 관측의 독립 분석으로 M87 고리 재확인; 회전 크기는 미확정.",
+      "link": "https://kohyuji.github.io/daily-news-briefing/briefings/2026/11/2026-11-12/#science-m87-independent"
+    },
+    {
+      "id": "science-ancestral-protein",
+      "title": "단백질의 결합 방식에 남은 진화의 흔적",
+      "change": "추정 조상 LacI/GalR 단백질의 결합 열역학 변화; 과거 환경 적응 해석의 한계 유지.",
+      "link": "https://kohyuji.github.io/daily-news-briefing/briefings/2026/11/2026-11-12/#science-ancestral-protein"
+    }
+  ]
+}

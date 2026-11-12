@@ -1,0 +1,54 @@
+{
+  "automation_id": "automation",
+  "name": "한국어 학습형 뉴스 브리핑 발행",
+  "status": "ACTIVE",
+  "kind": "cron",
+  "execution_environment": "local",
+  "project_id": "374238a7-6b7b-4e98-8fa9-413b8b7a68ac",
+  "schedule": {
+    "day": "Friday",
+    "time": "11:00",
+    "timezone": "Asia/Seoul",
+    "host_timezone_verified": "Korea Standard Time",
+    "next_expected_local": "2026-11-13T11:00:00+09:00",
+    "next_expected_utc": "2026-11-13T02:00:00+00:00",
+    "next_time_evidence": "Calculated from persisted schedule and verified host timezone; scheduler card does not return next_run"
+  },
+  "model": {
+    "value": "gpt-6.1-sol",
+    "evidence": "Persisted automation.toml actual model field"
+  },
+  "reasoning": {
+    "value": "medium",
+    "evidence": "Persisted automation.toml actual reasoning_effort field"
+  },
+  "speed": {
+    "requested": "Standard",
+    "config_file": ".codex/config.toml",
+    "service_tier": "default",
+    "independent_automation_speed_field_available": false,
+    "scheduled_runtime_verified": false,
+    "evidence": "Stored project default, consistent with existing user default; actual scheduled run has not occurred",
+    "reference": "https://learn.chatgpt.com/docs/codex-sdk#Set-the-service-tier-for-one-turn"
+  },
+  "notifications": {
+    "route": "Codex Scheduled result notification",
+    "policy": "normal (notificationPolicy=null at creation)",
+    "success_output": "Issue page link only, one line",
+    "first_scheduled_delivery_verified": false,
+    "limitation": "No run-now or notification test action exposed; first scheduled delivery remains unverified"
+  },
+  "duplicate_check": {
+    "matching_project_count": 1,
+    "other_existing_automations_count": 0
+  },
+  "first_publication_verified_before_activation": true,
+  "first_issue_url": "https://kohyuji.github.io/daily-news-briefing/briefings/2026/11/2026-11-12/",
+  "browser_control": "Personal browser control prohibited; no automatic fallback",
+  "requirements": [
+    "Computer powered on",
+    "Codex app running",
+    "Local project and existing Git authentication accessible"
+  ],
+  "verified_at": "2026-11-12T14:56:04+09:00"
+}

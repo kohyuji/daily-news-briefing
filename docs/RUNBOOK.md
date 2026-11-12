@@ -22,13 +22,15 @@
 6. `python -m pip install -r requirements.txt` (로컬 격리 설치는 `--target .vendor`). `python scripts/build.py`. 수작업 검토: 15개 모두 유사 깊이, 분야별 3개, 중복 사건 없음, 원문 교차 확인, 사건·게시일 분리, 과학 한계, 출처 정확성, 캡션·권리. 빌드는 형식과 링크를 검증할 뿐 사실 검증을 대신하지 않는다.
 7. Markdown·확보 이미지·해당 출처 메모만 commit하고 main에 push한다. `_site`는 올리지 않는다. GitHub Actions의 `Build and deploy archive`가 정적 사이트를 빌드·배포한다. 뉴스 생성·AI 호출·예약 cron은 Actions에 넣지 않는다.
 8. 동일 커밋의 Actions 배포 성공을 확인한다. 60초 이내 간격으로 필요할 때 확인하며 작업을 끝까지 추적한다. 연결 도구는 commit workflow run 조회, 불가능하면 GitHub 공개 API/Actions 화면을 사용한다. 별도 감시 예약을 만들지 않는다.
-9. `python scripts/verify_public.py --date YYYY-MM-DD`로 공개 원본 해시, 회차 15개 앵커·출처·목차, 홈·아카이브·연도·월 목록, CSS·확보 이미지를 확인한다. 새 기능/오류가 있을 때만 PC·휴대전화 화면 QA를 추가한다. 첫 구축에서는 둘 다 확인한다. 이미지가 실제 표시 안 되면 제거+미확보 후 재배포한다.
+9. `python scripts/verify_public.py --date YYYY-MM-DD`로 공개 원본 해시, 회차 15개 앵커·출처·목차, 홈·아카이브·연도·월 목록, CSS·확보 이미지를 확인한다. 새 기능/오류가 있을 때만 PC·휴대전화 화면 QA를 추가한다. 개인 브라우저를 사용하지 않고 검증할 수 없으면 시각적 검증의 한계를 기록한다. 첫 회차는 개인 브라우저 중단 지시에 따라 공개 HTML·CSS·이미지 응답을 확인했으며 회차의 PC·휴대전화 렌더링 화면 검사는 수행하지 않았다. 이미지가 실제 표시 안 되면 제거+미확보 후 재배포한다.
 10. 전부 성공하면 `python scripts/verify_public.py --date YYYY-MM-DD --mark-success`. 이 단계 전에는 성공 상태를 수정하지 않는다. 이 스크립트가 최근 이슈를 30개로 제한하여 갱신한다. 요약은 짧게 쓰며 약 2,000토큰을 목표로 유지한다. 상태·요약·검증결과를 별도 commit/push한다. 운영 파일 변경만으로는 재배포하지 않는다.
 11. lock을 본인 ID로 해제한다. 정상 최종 응답은 회차 홈페이지 링크 한 줄만. 실패 시 짧은 이유와 실패 상태만 알리고 성공 기준을 보존한다. 예약 알림은 Codex Scheduled의 알림 경로를 쓴다. 메일·메신저 전송은 추가하지 않는다.
 
 ## 환경과 예약
 
 예약은 이 프로젝트의 독립 로컬 작업으로 매주 금요일 11:00 Asia/Seoul에 수행한다. 로컬 파일을 쓰므로 컴퓨터가 켜져 있고 앱이 실행 중이며 프로젝트와 Git 인증에 접근 가능해야 한다. 첫 회차의 공개 검증을 통과한 후에만 반복 예약을 활성화한다. 기존 예약은 `$CODEX_HOME/automations/*/automation.toml`에서 목적·프로젝트를 대조하여 재사용하고 중복을 만들지 않는다. 모델·Medium·Standard의 실제 지원과 저장된 값을 확인하여 `.ops/automation.json`에 기록한다. 지원하지 않는 필드를 설정됐다고 보고하지 않는다.
+
+현재 예약 ID는 `automation`이다. 실제 예약 필드에 `model = gpt-6.1-sol`, `reasoning_effort = medium`이 저장되어 있다. 예약 도구에는 독립된 속도 필드가 없으므로 `.codex/config.toml`의 `service_tier = default`로 Standard 기본값을 저장했다. 예약 실행에서의 실제 속도 적용과 OS 알림 수신은 첫 예약 실행 전에는 확인할 수 없다. 이 제한을 모델·추론의 저장 확인과 구분한다. 시스템 시간대는 Korea Standard Time(Asia/Seoul)이며 시간대를 변경하면 예약 시각도 다시 점검한다.
 
 ## 참고 문서
 

@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-12",
+  "url": "https://kohyuji.github.io/daily-news-briefing/briefings/2026/11/2026-11-12/",
+  "research_cutoff": "2026-11-12T14:40:00+09:00",
+  "verified_at": "2026-11-12T14:51:00+09:00",
+  "source_sha256": "8dcb348d9ec5fa8b1842ad1be631e183787e5e43b272f1e6c143c822543f46e6",
+  "source_commit": "48170980edccf8d5ff6df4e48272c8e018c82669",
+  "checks": [
+    "source_hash",
+    "public_markdown_hash",
+    "15_articles",
+    "5_categories",
+    "source_links_in_html",
+    "home",
+    "archive",
+    "year_archive",
+    "month_archive",
+    "stylesheet",
+    "available_images"
+  ],
+  "image_count": 1,
+  "workflow_run_id": 43163880811,
+  "workflow_url": "https://github.com/kohyuji/daily-news-briefing/actions/runs/43163880811",
+  "workflow_conclusion": "success",
+  "visual_qa": {
+    "issue_desktop_and_mobile_rendering_verified": false,
+    "reason": "Personal browser control stopped at user request; public HTML, CSS, local links, and image response verified"
+  },
+  "notification": {
+    "hq_completion_response": "Issue link provided with setup explanation",
+    "scheduled_delivery_verified": false
+  }
+}

@@ -2,7 +2,7 @@ name: Build and deploy archive
 on:
   push:
     branches: [main]
-    paths-ignore: ['.ops/**', 'AGENTS.md', 'README.md', 'docs/**', 'templates/issue.md']
+    paths-ignore: ['.ops/**', '.codex/**', 'AGENTS.md', 'README.md', 'docs/**', 'templates/issue.md']
   workflow_dispatch:
 permissions:
   contents: read
